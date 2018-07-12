@@ -1,4 +1,6 @@
 from time import time as t
+import subprocess
+
 
 time = t()
 S = 11 # Vertexes
@@ -49,7 +51,8 @@ def path_generate(origin):
 
 
 def min_path():
-
+    
+    global mem
     minimum = 1000
     origins_distance = []
     best_origin = []
@@ -83,5 +86,4 @@ if __name__ =='__main__':
 
     print('#### Results ####')
     print('Minimum Path: {}, leaving from origins: {}'.format(results[0], results[1]))
-    print('Memory Waste: {}'.format(0))
     print('Time Spent: {}'.format(t() - time))
