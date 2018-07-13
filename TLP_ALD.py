@@ -20,7 +20,7 @@ def read_graph(f):
 
 def path_generate(origin):
 
-    graph_al_bool = [False for v in range(len(graph_al))] # lista de verificação
+    graph_al_bool = [False for v in range(len(graph_al))] # Verification List
     distance = 0
     i = origin
     new_i = origin
