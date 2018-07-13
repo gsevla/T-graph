@@ -52,7 +52,6 @@ def path_generate(origin):
 
 def min_path():
     
-    global mem
     minimum = 1000
     origins_distance = []
     best_origin = []
